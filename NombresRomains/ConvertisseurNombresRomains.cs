@@ -8,6 +8,7 @@ public static class ConvertisseurNombresRomains
                1 => "I",
                2 => "II",
                3 => "III",
-               _ => "IV"
+               4 => "IV",
+               _ => "V"
            };
 }
