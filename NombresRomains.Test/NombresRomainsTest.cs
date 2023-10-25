@@ -99,4 +99,45 @@ public class NombresRomainsTest
         // ALORS on obtient "VII"
         Assert.Equal("VII", nombreRomain);
     }
+    
+    [Fact]
+    public void Test8()
+    {
+        // ETANT DONNE le chiffre 8
+        const uint chiffre = 8;
+
+        // QUAND on le convertit en nombres romains
+        var nombreRomain =
+            ConvertisseurNombresRomains.Convertir(chiffre);
+
+        // ALORS on obtient "VIII"
+        Assert.Equal("VIII", nombreRomain);
+    }
+    
+    [Fact]
+    public void Test9()
+    {
+        // ETANT DONNE le chiffre 9
+        const uint chiffre = 9;
+
+        // QUAND on le convertit en nombres romains
+        var nombreRomain =
+            ConvertisseurNombresRomains.Convertir(chiffre);
+
+        // ALORS on obtient "IX"
+        Assert.Equal("IX", nombreRomain);
+    }
+    [Fact]
+    public void Test10()
+    {
+        // ETANT DONNE le chiffre 10
+        const uint chiffre = 10;
+
+        // QUAND on le convertit en nombres romains
+        var nombreRomain =
+            ConvertisseurNombresRomains.Convertir(chiffre);
+
+        // ALORS on obtient "X"
+        Assert.Equal("X", nombreRomain);
+    }    
 }
