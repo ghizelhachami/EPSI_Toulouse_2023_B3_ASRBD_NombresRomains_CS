@@ -57,4 +57,18 @@ public class NombresRomainsTest
         // ALORS on obtient "IV"
         Assert.Equal("IV", nombreRomain);
     }
+
+    [Fact]
+    public void Test5()
+    {
+        // ETANT DONNE le chiffre 5
+        const uint chiffre = 5;
+
+        // QUAND on le convertit en nombres romains
+        var nombreRomain =
+            ConvertisseurNombresRomains.Convertir(chiffre);
+
+        // ALORS on obtient "IV"
+        Assert.Equal("V", nombreRomain);
+    }
 }
