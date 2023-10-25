@@ -3,8 +3,11 @@
 public static class ConvertisseurNombresRomains
 {
     public static string Convertir(uint chiffre)
-    {
-        if (chiffre == 3) return "III";
-        return chiffre == 1 ? "I" : "II";
-    }
+        => chiffre switch
+           {
+               1 => "I",
+               2 => "II",
+               3 => "III",
+               _ => "IV"
+           };
 }
